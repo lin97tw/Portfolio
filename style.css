@@ -1,0 +1,41 @@
+body {
+  background-color: #020617;
+  color: #e2e8f0;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { 
+  width: 8px; 
+}
+::-webkit-scrollbar-track { 
+  background: #0f172a; 
+}
+::-webkit-scrollbar-thumb { 
+  background: #334155; 
+  border-radius: 4px; 
+}
+::-webkit-scrollbar-thumb:hover { 
+  background: #475569; 
+}
+
+/* Animation Utilities */
+.animate-enter {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: enter 0.5s ease-out forwards;
+}
+
+@keyframes enter {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+
+/* Dynamic active link styling */
+.nav-link.active {
+  color: #22d3ee; /* accent-400 */
+}

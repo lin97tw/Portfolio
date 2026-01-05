@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Creative Project | Daniel Lin</title>
+  
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+  <link rel="stylesheet" href="../style.css">
+  
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'], mono: ['JetBrains Mono', 'monospace'] },
+          colors: {
+            slate: { 850: '#151f32', 900: '#0f172a', 950: '#020617' },
+            accent: { 400: '#22d3ee', 500: '#06b6d4', 300: '#67e8f9' }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="selection:bg-accent-400 selection:text-slate-900 font-sans bg-slate-950 text-slate-200">
+
+  <div class="flex flex-col min-h-screen">
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+      <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <a href="../index.html" class="flex items-center gap-2 group">
+          <div class="p-2 bg-slate-900 border border-slate-700 rounded-lg group-hover:border-accent-400 transition-colors">
+            <i data-lucide="terminal" class="w-5 h-5 text-accent-400"></i>
+          </div>
+          <h1 class="font-mono font-bold text-lg tracking-tight text-slate-100 group-hover:text-accent-400 transition-colors">Daniel Lin</h1>
+        </a>
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="../index.html" class="text-sm font-medium text-slate-400 hover:text-accent-400 transition-colors">Home</a>
+          <!-- Fixed Link -->
+          <a href="../index.html#projects" class="text-sm font-medium text-slate-400 hover:text-accent-400 transition-colors">Projects</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow pt-24 px-6 md:px-12 max-w-7xl mx-auto w-full">
+      <div class="max-w-4xl mx-auto py-10 animate-enter">
+        <!-- Fixed Link -->
+        <a href="../index.html#projects" class="inline-flex items-center gap-2 text-slate-400 hover:text-accent-400 mb-8 transition-colors font-mono text-sm">
+          <i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Projects
+        </a>
+
+        <header class="mb-12 border-b border-slate-800 pb-8">
+          <div class="flex gap-4 items-center mb-6 text-sm text-slate-400 font-mono">
+            <span class="flex items-center gap-2"><i data-lucide="tag" class="w-3 h-3"></i> Artificial Intelligence</span>
+            <span>|</span>
+            <span class="flex items-center gap-2"><i data-lucide="calendar" class="w-3 h-3"></i> 2025</span>
+          </div>
+          <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">AI Creative Project</h1>
+          <p class="text-xl text-slate-400 leading-relaxed max-w-2xl">
+            Using AI tools to assist in creating game and story content.
+          </p>
+        </header>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          <div class="lg:col-span-2 space-y-12">
+            <section>
+              <h2 class="text-lg font-mono text-accent-400 mb-4 uppercase tracking-wider">Overview</h2>
+              <p class="text-slate-300 leading-8 text-lg">
+                本專案使用 AI 工具輔助創作遊戲與故事內容，從構思、敘事到視覺設計皆透過 AI 進行輔助，探索人工智慧在創意產業中的應用。
+              </p>
+            </section>
+            <section>
+              <h2 class="text-lg font-mono text-accent-400 mb-4 uppercase tracking-wider">What I Did</h2>
+              <p class="text-slate-300 leading-8 text-lg">
+                我負責設計遊戲與故事的核心概念，撰寫提示詞（prompts）引導 AI 產生內容，並整合文字與視覺素材完成作品。
+              </p>
+            </section>
+            <section>
+              <h2 class="text-lg font-mono text-accent-400 mb-4 uppercase tracking-wider">What I Learned</h2>
+              <div class="bg-slate-900/50 border-l-2 border-accent-500/50 p-6 rounded-r-lg">
+                <p class="text-slate-300 leading-7">
+                  透過本專案，我理解到如何有效地與 AI 協作，並學會將創意轉化為具體且可呈現的成果。
+                </p>
+              </div>
+            </section>
+          </div>
+
+          <div class="lg:col-span-1">
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 sticky top-32">
+              <h3 class="font-bold text-white mb-4">Tech Stack</h3>
+              <ul class="space-y-3">
+                <li class="flex items-center gap-3 text-slate-400 text-sm"><div class="w-1.5 h-1.5 bg-accent-500 rounded-full"></div>ChatGPT</li>
+                <li class="flex items-center gap-3 text-slate-400 text-sm"><div class="w-1.5 h-1.5 bg-accent-500 rounded-full"></div>Canva</li>
+                <li class="flex items-center gap-3 text-slate-400 text-sm"><div class="w-1.5 h-1.5 bg-accent-500 rounded-full"></div>AI Prompt Engineering</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="w-full border-t border-slate-800 mt-20 py-8 bg-slate-950 text-center text-slate-500 text-sm font-mono">
+      <p>© <span id="year">2026</span> Daniel Lin. All systems nominal.</p>
+    </footer>
+  </div>
+  <script>lucide.createIcons();</script>
+</body>
+</html>
